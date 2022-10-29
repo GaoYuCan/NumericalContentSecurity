@@ -22,7 +22,7 @@ def logistic(src: np.ndarray, x0: float, u: float):
 if __name__ == '__main__':
     U = 3.987654321
     X0 = 0.123456789
-    NOISE = 1e-7
+    NOISE = 1e-17 # 18 可以正常还原
 
     # 读取图像
     lena = cv.imread('../res/lena.bmp', cv.IMREAD_GRAYSCALE)
