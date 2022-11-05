@@ -25,7 +25,7 @@ if __name__ == '__main__':
     NOISE = 1e-17 # 18 可以正常还原
 
     # 读取图像
-    lena = cv.imread('../res/lena.bmp', cv.IMREAD_GRAYSCALE)
+    lena = cv.imread('../../res/lena.bmp', cv.IMREAD_GRAYSCALE)
     # 显示原图
     cv.imshow("Display Src", lena)
     # 加密

@@ -51,7 +51,7 @@ if __name__ == '__main__':
     U, X0 = 3.987654321, 0.123456789
 
     # 读取原图
-    lena = cv.imread('../res/lena.bmp', cv.IMREAD_GRAYSCALE)
+    lena = cv.imread('../../res/lena.bmp', cv.IMREAD_GRAYSCALE)
     lena_encrypted = lena
     # 显示原图
     cv.imshow("Display Src", lena)
@@ -80,6 +80,7 @@ if __name__ == '__main__':
     # 计算 IE
     IE_SRC = 0
     IE_ENC = 0
+
     for i in range(256):
         ps = lena[lena == i].size / lena.size
         pe = lena_encrypted[lena_encrypted == i].size / lena_encrypted.size

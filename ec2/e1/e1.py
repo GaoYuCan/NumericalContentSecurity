@@ -34,7 +34,7 @@ if __name__ == '__main__':
     KEY_N , KEY_B = 1, 1
 
     # 以灰度图形式读取文件
-    ahu: np.ndarray = cv.imread('../res/anda.jpeg', cv.IMREAD_GRAYSCALE)
+    ahu: np.ndarray = cv.imread('../../res/anda.jpeg', cv.IMREAD_GRAYSCALE)
     cv.imshow("Display Src", ahu)
     # 加密
     encrypted_ahu = ahu
